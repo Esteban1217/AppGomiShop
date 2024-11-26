@@ -1,0 +1,36 @@
+name: gomishop
+description: Una aplicación de tienda con login, carrito de compras y diseño moderno.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2               # Gestión de estado
+  shared_preferences: ^2.2.0     # Almacenamiento local sencillo
+  flutter_secure_storage: ^8.0.0 # Almacenamiento seguro de credenciales
+  http: ^1.0.0                   # Consumo de APIs
+  dio: ^5.3.0                    # Manejo avanzado de APIs
+  flutter_svg: ^1.1.6            # Soporte para íconos SVG
+  intl: ^0.18.0                  # Formateo de fechas, números y localización
+  validatorless: ^1.0.1          # Validaciones fáciles en formularios
+  cached_network_image: ^3.2.3   # Manejo eficiente de imágenes desde la web
+  awesome_dialog: ^2.1.0         # Cuadros de diálogo modernos y personalizables
+  cupertino_icons: ^1.0.8        # Íconos estilo iOS
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/             # Carpeta para imágenes estáticas
+    - assets/json/               # Carpeta para archivos JSON
